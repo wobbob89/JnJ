@@ -1,20 +1,23 @@
 const revealables = document.querySelectorAll("[data-reveal]");
-const stackLinks = document.querySelectorAll(".stack-link");
-const sections = document.querySelectorAll("main section[id]");
+const navLinks = document.querySelectorAll(".js-nav-link");
+const sections = document.querySelectorAll("section[id]");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("is-visible");
-          revealObserver.unobserve(entry.target);
+        if (!entry.isIntersecting) {
+          return;
         }
+
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
       });
     },
     {
-      rootMargin: "0px 0px -12% 0px",
-      threshold: 0.12,
+      threshold: 0.14,
+      rootMargin: "0px 0px -10% 0px",
     }
   );
 
@@ -23,33 +26,42 @@ if ("IntersectionObserver" in window) {
   revealables.forEach((element) => element.classList.add("is-visible"));
 }
 
-const updateHeroShift = () => {
-  document.documentElement.style.setProperty("--hero-shift", `${window.scrollY * -0.08}px`);
+const setActiveNav = (id) => {
+  navLinks.forEach((link) => {
+    link.classList.toggle("is-active", link.dataset.navTarget === id);
+  });
 };
 
-updateHeroShift();
-window.addEventListener("scroll", updateHeroShift, { passive: true });
-
-if ("IntersectionObserver" in window && stackLinks.length > 0) {
+if ("IntersectionObserver" in window && navLinks.length > 0) {
   const sectionObserver = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((left, right) => right.intersectionRatio - left.intersectionRatio)[0];
 
-        stackLinks.forEach((link) => {
-          link.classList.toggle(
-            "is-active",
-            link.getAttribute("href") === `#${entry.target.id}`
-          );
-        });
-      });
+      if (visible) {
+        setActiveNav(visible.target.id);
+      }
     },
     {
-      threshold: 0.55,
+      threshold: [0.2, 0.45, 0.7],
+      rootMargin: "-18% 0px -45% 0px",
     }
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
+} else if (sections[0]) {
+  setActiveNav(sections[0].id);
 }
+
+const updateHeroOffset = () => {
+  if (reducedMotion) {
+    document.documentElement.style.setProperty("--hero-offset", "0px");
+    return;
+  }
+
+  document.documentElement.style.setProperty("--hero-offset", `${window.scrollY * -0.06}px`);
+};
+
+updateHeroOffset();
+window.addEventListener("scroll", updateHeroOffset, { passive: true });

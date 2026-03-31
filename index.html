@@ -18,215 +18,259 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-layout">
-    <aside class="sidebar">
-      <a class="sidebar-brand" href="#home" aria-label="J&amp;J&apos;s home">
+  <div class="site-shell">
+    <aside class="desktop-rail">
+      <a class="rail-mark" href="#home" aria-label="J&amp;J&apos;s home">
         <img src="assets/Profile logo.png" alt="J&amp;J&apos;s Multi Skilled Technicians logo">
       </a>
 
-      <nav class="button-stack" aria-label="Primary">
-        <img class="button-stack-art" src="assets/buttons.png" alt="">
-        <a class="stack-link home" href="#home"><span class="sr-only">Home</span></a>
-        <a class="stack-link services" href="#services"><span class="sr-only">Services</span></a>
-        <a class="stack-link gallery" href="#gallery"><span class="sr-only">Gallery</span></a>
-        <a class="stack-link about" href="#about"><span class="sr-only">About us</span></a>
-        <a class="stack-link contact" href="#contact"><span class="sr-only">Contact</span></a>
-        <a class="stack-link reviews" href="#reviews"><span class="sr-only">Reviews</span></a>
+      <nav class="button-rail" aria-label="Primary navigation">
+        <a class="nav-asset js-nav-link" href="#home" data-nav-target="home">
+          <img src="assets/button-crops/home.png" alt="Home">
+        </a>
+        <a class="nav-asset js-nav-link" href="#services" data-nav-target="services">
+          <img src="assets/button-crops/services.png" alt="Services">
+        </a>
+        <a class="nav-asset js-nav-link" href="#gallery" data-nav-target="gallery">
+          <img src="assets/button-crops/gallery.png" alt="Gallery">
+        </a>
+        <a class="nav-asset js-nav-link" href="#about" data-nav-target="about">
+          <img src="assets/button-crops/about-us.png" alt="About us">
+        </a>
+        <a class="nav-asset js-nav-link" href="#contact" data-nav-target="contact">
+          <img src="assets/button-crops/contact.png" alt="Contact">
+        </a>
+        <a class="nav-asset js-nav-link" href="#reviews" data-nav-target="reviews">
+          <img src="assets/button-crops/reviews.png" alt="Reviews">
+        </a>
       </nav>
 
-      <div class="sidebar-contact">
+      <div class="rail-contact">
+        <p class="rail-location">Melksham</p>
         <a href="mailto:rob@jnjs.co.uk">rob@jnjs.co.uk</a>
         <a href="https://www.facebook.com/JnJsmst" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://www.jnjs.co.uk/" target="_blank" rel="noreferrer">www.jnjs.co.uk</a>
       </div>
     </aside>
 
-    <main class="page-content">
-      <header class="mobile-header">
-        <img src="assets/Profile logo.png" alt="J&amp;J&apos;s Multi Skilled Technicians logo">
-        <div class="mobile-header-copy">
+    <main class="content">
+      <header class="mobile-top">
+        <a class="mobile-mark" href="#home" aria-label="J&amp;J&apos;s home">
+          <img src="assets/Profile logo.png" alt="J&amp;J&apos;s Multi Skilled Technicians logo">
+        </a>
+
+        <div class="mobile-copy">
           <p>J&amp;J&apos;s Multi Skilled Technicians</p>
           <a href="mailto:rob@jnjs.co.uk">rob@jnjs.co.uk</a>
         </div>
       </header>
 
-      <nav class="mobile-nav" aria-label="Mobile">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <nav class="mobile-button-strip" aria-label="Mobile navigation">
+        <a class="mobile-nav-asset js-nav-link" href="#home" data-nav-target="home">
+          <img src="assets/button-crops/home.png" alt="Home">
+        </a>
+        <a class="mobile-nav-asset js-nav-link" href="#services" data-nav-target="services">
+          <img src="assets/button-crops/services.png" alt="Services">
+        </a>
+        <a class="mobile-nav-asset js-nav-link" href="#gallery" data-nav-target="gallery">
+          <img src="assets/button-crops/gallery.png" alt="Gallery">
+        </a>
+        <a class="mobile-nav-asset js-nav-link" href="#about" data-nav-target="about">
+          <img src="assets/button-crops/about-us.png" alt="About us">
+        </a>
+        <a class="mobile-nav-asset js-nav-link" href="#contact" data-nav-target="contact">
+          <img src="assets/button-crops/contact.png" alt="Contact">
+        </a>
+        <a class="mobile-nav-asset js-nav-link" href="#reviews" data-nav-target="reviews">
+          <img src="assets/button-crops/reviews.png" alt="Reviews">
+        </a>
       </nav>
 
-      <section class="hero panel" id="home">
+      <section class="hero" id="home">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Extensions / new builds / renovations / everything in between</p>
-          <h1>Extensions, renovations, kitchens, bathrooms and the rest of the job.</h1>
+          <p class="label">J&amp;J&apos;s / Multi Skilled Technicians / Full property work</p>
+          <h1>Extensions, new builds, renovations and the full job from shell to finish.</h1>
           <p class="hero-lead">
-            Extensions, new builds, renovations, roofing, plastering, bathrooms, kitchens,
-            carpentry, plumbing, tiling, groundworks and everything else that gets the job over
-            the line.
+            From structure and exterior work through to bathrooms, kitchens and final fit-out,
+            J&amp;J&apos;s takes on the jobs that need more than one trade and need the whole thing done
+            properly.
           </p>
 
           <div class="hero-actions">
-            <a class="cta cta-primary" href="mailto:rob@jnjs.co.uk">Email Rob</a>
-            <a
-              class="cta cta-secondary"
-              href="https://www.facebook.com/JnJsmst"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Facebook
+            <a class="cta-asset" href="#gallery">
+              <img src="assets/button-crops/gallery.png" alt="Jump to gallery">
+            </a>
+            <a class="cta-asset" href="mailto:rob@jnjs.co.uk">
+              <img src="assets/button-crops/contact.png" alt="Email Rob">
             </a>
           </div>
 
           <div class="hero-links">
             <a href="mailto:rob@jnjs.co.uk">rob@jnjs.co.uk</a>
+            <a href="https://www.facebook.com/JnJsmst" target="_blank" rel="noreferrer">facebook.com/JnJsmst</a>
             <a href="https://www.jnjs.co.uk/" target="_blank" rel="noreferrer">www.jnjs.co.uk</a>
           </div>
         </div>
 
-        <div class="hero-visual" data-reveal>
-          <img
-            class="hero-banner"
-            src="assets/Banner_edited.png"
-            alt="J&amp;J&apos;s banner with contact information"
-          >
-          <div class="hero-logo-shell">
-            <img class="hero-logo" src="assets/Profile logo.png" alt="J&amp;J&apos;s Multi Skilled Technicians logo">
-          </div>
+        <div class="hero-stack" data-reveal>
+          <img class="hero-wordmark" src="assets/jjs-wordmark.png" alt="J&amp;J&apos;s Multi Skilled Technicians wordmark">
+          <img class="hero-banner" src="assets/new b.png" alt="J&amp;J&apos;s contact banner">
+        </div>
+
+        <div class="hero-lanes" data-reveal>
+          <p>Extensions / New Builds / Renovations</p>
+          <p>Roofing / Plastering / Carpentry / Plumbing</p>
+          <p>Bathrooms / Kitchens / Tiling / Groundworks</p>
         </div>
       </section>
 
-      <section class="disciplines panel" id="services">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Services</p>
-          <h2>The full scope, not a cut-down version.</h2>
+      <section class="services" id="services">
+        <div class="section-intro" data-reveal>
+          <p class="label">Services</p>
+          <h2>Everything listed here is work you actually take on.</h2>
         </div>
 
-        <div class="discipline-grid">
-          <article class="discipline-card" data-reveal><span>01</span><h3>Extensions</h3></article>
-          <article class="discipline-card" data-reveal><span>02</span><h3>New builds</h3></article>
-          <article class="discipline-card" data-reveal><span>03</span><h3>Renovations</h3></article>
-          <article class="discipline-card" data-reveal><span>04</span><h3>Roofing</h3></article>
-          <article class="discipline-card" data-reveal><span>05</span><h3>Plastering</h3></article>
-          <article class="discipline-card" data-reveal><span>06</span><h3>Bathrooms</h3></article>
-          <article class="discipline-card" data-reveal><span>07</span><h3>Kitchens</h3></article>
-          <article class="discipline-card" data-reveal><span>08</span><h3>Carpentry</h3></article>
-          <article class="discipline-card" data-reveal><span>09</span><h3>Plumbing</h3></article>
-          <article class="discipline-card" data-reveal><span>10</span><h3>Tiling</h3></article>
-          <article class="discipline-card" data-reveal><span>11</span><h3>Groundworks</h3></article>
-          <article class="discipline-card discipline-card-wide" data-reveal>
-            <span>12</span>
-            <h3>Everything needed to get the job finished right</h3>
-          </article>
-        </div>
+        <ul class="service-list" data-reveal>
+          <li><span>01</span>Extensions</li>
+          <li><span>02</span>New builds</li>
+          <li><span>03</span>Renovations</li>
+          <li><span>04</span>Roofing</li>
+          <li><span>05</span>Plastering</li>
+          <li><span>06</span>Bathrooms</li>
+          <li><span>07</span>Kitchens</li>
+          <li><span>08</span>Carpentry</li>
+          <li><span>09</span>Plumbing</li>
+          <li><span>10</span>Tiling</li>
+          <li><span>11</span>Groundworks</li>
+          <li><span>12</span>Everything needed to get the project over the line</li>
+        </ul>
       </section>
 
-      <section class="gallery panel" id="gallery">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Gallery</p>
-          <h2>Real work. Real site shots. No stock filler.</h2>
+      <section class="gallery" id="gallery">
+        <div class="section-intro" data-reveal>
+          <p class="label">Gallery</p>
+          <h2>Recent work across building, renovation, interiors and finish.</h2>
         </div>
 
-        <div class="gallery-layout">
-          <figure class="gallery-primary" data-reveal>
-            <img src="assets/Work/potley-site.jpg" alt="J&amp;J&apos;s site board beside recent exterior work">
-            <figcaption>Exterior site work with the J&amp;J&apos;s board on site.</figcaption>
+        <div class="gallery-grid">
+          <figure class="gallery-card feature" data-reveal>
+            <img src="assets/Work/potley-site.jpg" alt="J&amp;J&apos;s site board in front of exterior build work">
+            <figcaption>Exterior job with the J&amp;J&apos;s board on site.</figcaption>
           </figure>
 
-          <figure class="gallery-secondary" data-reveal>
+          <figure class="gallery-card wide" data-reveal>
             <img src="assets/gallery/media-wall.jpg" alt="Built media wall with feature lighting">
-            <figcaption>Media wall and fitted interior finish.</figcaption>
+            <figcaption>Media wall and interior fit-out finish.</figcaption>
           </figure>
 
-          <figure class="gallery-secondary" data-reveal>
-            <img src="assets/gallery/fitted-bedroom.jpg" alt="Bedroom with fitted wall storage">
-            <figcaption>Built storage and bedroom work.</figcaption>
-          </figure>
-
-          <figure class="gallery-secondary" data-reveal>
+          <figure class="gallery-card tall" data-reveal>
             <img src="assets/gallery/bathroom-finish.jpg" alt="Bathroom finish with tiled walls and towel radiator">
-            <figcaption>Bathroom finish and detailing.</figcaption>
+            <figcaption>Bathroom finish and detail work.</figcaption>
           </figure>
 
-          <figure class="gallery-secondary" data-reveal>
-            <img src="assets/gallery/bathroom-tiling.jpg" alt="Bathroom tiling around window and toilet">
-            <figcaption>Tiling and clean bathroom lines.</figcaption>
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/share-floor-structure.jpg" alt="Floor structure work in progress">
+            <figcaption>Structural floor work in progress.</figcaption>
           </figure>
 
-          <figure class="gallery-secondary" data-reveal>
-            <img src="assets/gallery/exterior-house.jpg" alt="Exterior house work in progress">
-            <figcaption>Exterior improvement and on-site build work.</figcaption>
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/share-plaster-ceiling.jpg" alt="Fresh plaster ceiling with downlights">
+            <figcaption>Plastering and ceiling prep.</figcaption>
+          </figure>
+
+          <figure class="gallery-card wide" data-reveal>
+            <img src="assets/gallery/fitted-bedroom.jpg" alt="Bedroom with fitted storage and shelving">
+            <figcaption>Bedroom fit-out and built storage.</figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/share-house-front.jpg" alt="Exterior front of a house project">
+            <figcaption>Exterior house work from the shared project photos.</figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/share-renovation-ceiling.jpg" alt="Ceiling and renovation work in progress">
+            <figcaption>Renovation and ceiling build stage.</figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/share-window-work.jpg" alt="Window work in progress with exposed insulation">
+            <figcaption>Window work and in-progress structure.</figcaption>
+          </figure>
+
+          <figure class="gallery-card" data-reveal>
+            <img src="assets/gallery/exterior-house.jpg" alt="Exterior improvement work in progress">
+            <figcaption>Exterior improvement and site work.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="about panel" id="about">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">About us</p>
-          <h2>Built to cover the full job, not just one part of it.</h2>
+      <section class="about" id="about">
+        <div class="section-intro" data-reveal>
+          <p class="label">About us</p>
+          <h2>Built for the jobs that need more than one trade and less messing about.</h2>
         </div>
 
-        <div class="about-layout">
+        <div class="about-grid">
           <p class="about-copy" data-reveal>
-            J&amp;J&apos;s Multi Skilled Technicians takes on property work from groundwork and structure
-            through to fit-out and finishing. That includes extensions, new builds, renovations,
-            roofing, plastering, bathrooms, kitchens, carpentry, plumbing, tiling and the rest of
-            the work needed to get a project finished properly.
+            J&amp;J&apos;s Multi Skilled Technicians covers the hard work, the fit-out and the final
+            finish instead of handing a project off in pieces. The work shown here runs from
+            external jobs and structure through to bathrooms, kitchens, carpentry, plastering,
+            tiling, plumbing and the finishing details that make the job look right.
           </p>
 
-          <ul class="about-list" data-reveal>
-            <li>Extensions, new builds and full renovation work</li>
-            <li>Bathrooms, kitchens and interior fit-out</li>
-            <li>Roofing, plastering, carpentry, plumbing, tiling and groundworks</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="contact panel" id="contact">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Contact</p>
-          <h2>Send the job details and get a proper response.</h2>
-        </div>
-
-        <div class="contact-layout">
-          <img
-            class="contact-banner"
-            src="assets/Banner_edited.png"
-            alt="J&amp;J&apos;s contact banner"
-            data-reveal
-          >
-
-          <div class="contact-card" data-reveal>
-            <p class="contact-intro">
-              Send over the job details, photos, plans or measurements and we can take it from there.
-              For quotes, site visits or general enquiries, use the details below.
-            </p>
-            <a href="mailto:rob@jnjs.co.uk">rob@jnjs.co.uk</a>
-            <a href="https://www.facebook.com/JnJsmst" target="_blank" rel="noreferrer">
-              facebook.com/JnJsmst
-            </a>
-            <a href="https://www.jnjs.co.uk/" target="_blank" rel="noreferrer">www.jnjs.co.uk</a>
+          <div class="about-breakdown" data-reveal>
+            <article>
+              <p class="mini-label">Build</p>
+              <h3>Extensions, new builds and renovation structure</h3>
+            </article>
+            <article>
+              <p class="mini-label">Fit-out</p>
+              <h3>Bathrooms, kitchens, storage and interior work</h3>
+            </article>
+            <article>
+              <p class="mini-label">Finish</p>
+              <h3>Plastering, tiling, plumbing, carpentry and the last details</h3>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="reviews panel" id="reviews">
-        <div class="section-heading" data-reveal>
-          <p class="eyebrow">Reviews</p>
-          <h2>Project updates, messages and reviews live on Facebook.</h2>
-        </div>
+      <section class="contact" id="contact">
+        <div class="contact-panel">
+          <div class="contact-copy" data-reveal>
+            <p class="label">Contact</p>
+            <h2>Send the photos, plans or measurements and get the job moving.</h2>
+            <p class="contact-text">
+              For quotes, site visits and general enquiries, use the details below. Send the job
+              over clearly and it can be looked at properly from the start.
+            </p>
 
-        <div class="reviews-panel" data-reveal>
+            <div class="contact-links">
+              <a href="mailto:rob@jnjs.co.uk">rob@jnjs.co.uk</a>
+              <a href="https://www.facebook.com/JnJsmst" target="_blank" rel="noreferrer">facebook.com/JnJsmst</a>
+              <a href="https://www.jnjs.co.uk/" target="_blank" rel="noreferrer">www.jnjs.co.uk</a>
+            </div>
+          </div>
+
+          <div class="contact-art" data-reveal>
+            <img class="contact-banner" src="assets/Banner_edited.png" alt="J&amp;J&apos;s contact banner with email address">
+            <a class="contact-button" href="mailto:rob@jnjs.co.uk">
+              <img src="assets/button-crops/contact.png" alt="Contact">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews" id="reviews">
+        <div class="reviews-wrap" data-reveal>
+          <p class="label">Reviews</p>
+          <h2>Project updates, messages and review history stay on the Facebook page.</h2>
           <p>
-            Use the Facebook page for review history, project updates and another direct contact route.
+            Use Facebook for the latest project posts, direct messages and customer feedback.
           </p>
-          <a
-            class="cta cta-primary"
-            href="https://www.facebook.com/JnJsmst"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Open Facebook
+          <a class="review-button" href="https://www.facebook.com/JnJsmst" target="_blank" rel="noreferrer">
+            <img src="assets/button-crops/reviews.png" alt="Open reviews on Facebook">
           </a>
         </div>
       </section>
