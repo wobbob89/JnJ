@@ -801,6 +801,12 @@ h4 {
   pointer-events: none;
 }
 
+.work-frame--stamped::before,
+.image-card--stamped::before,
+.photo-card--stamped::before {
+  content: none;
+}
+
 .info-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
