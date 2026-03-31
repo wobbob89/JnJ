@@ -1,3 +1,9 @@
 Screenshot*.png
 
 .vercel
+.browser-profile/
+.npm-cache/
+.tmp/
+assets/Videos/
+assets/Work/new workl/
+assets/Work/new workl-3-001.zip
