@@ -475,6 +475,13 @@ h3 {
   word-break: break-word;
 }
 
+.contact-intro {
+  margin: 0 0 0.25rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
 .reviews-panel {
   max-width: 700px;
 }
